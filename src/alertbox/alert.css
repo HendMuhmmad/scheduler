@@ -1,0 +1,65 @@
+.root
+{
+	-fx-background-color: #1a1a1a;
+	-fx-padding: 0 20 0 20;
+	 -fx-font-family: 'sans-serif';
+	
+}
+.button:hover
+{
+	-fx-background-color: #1f1a24;
+	
+}
+.button
+{
+	-fx-text-fill: #cccccc;
+	-fx-font-size: 15;
+	-fx-background-color: #01b2b2;
+	-fx-background-radius: 30;
+	-fx-pref-width: 100;
+}
+.button:hover
+{
+	-fx-background-color:#019898;
+}
+.text-field
+{
+	-fx-text-fill: #cccccc;
+	-fx-font-size: 15;
+	-fx-padding: 10;
+	
+}
+.label
+{
+		-fx-text-fill: #cccccc;
+	-fx-font-size: 15;
+	
+}
+
+
+.check-box 
+{
+	
+    -fx-text-fill:  #cccccc;
+}
+/* .check-box:focused {
+    -fx-color: pink;
+}*/
+
+.check-box > .box {
+	                      /*-fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color */
+    -fx-background-color:  #404040, 	  #404040, 	  #404040, #333333;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 2, 2, 1, 1;
+    -fx-padding: 0.25em; /* 3 -- padding from the outside edge to the mark */
+}
+
+.check-box > .box > .mark {
+    -fx-background-color: transparent;
+}
+
+.check-box:selected > .box > .mark {
+    -fx-background-color: #cccccc;
+}
+
+

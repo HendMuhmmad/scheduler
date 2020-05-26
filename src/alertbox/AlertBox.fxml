@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="157.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alertbox.AlertBoxController">
+   <children>
+      <HBox prefHeight="42.0" prefWidth="389.0">
+         <children>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <JFXTextField fx:id="tab_name" alignment="CENTER" focusColor="#01b2b2" prefHeight="25.0" prefWidth="426.0" promptText="File Name" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="28.0" prefWidth="379.0">
+         <children>
+            <JFXCheckBox fx:id="primitive_checkbox" alignment="CENTER" checkedColor="#01b2b2" text="primitive" />
+            <Separator prefWidth="200.0" visible="false" />
+            <JFXCheckBox fx:id="non_primitive_checkbox" alignment="CENTER" checkedColor="#01b2b2" contentDisplay="CENTER" text="non-primitive" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="50.0" right="50.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="87.0" prefHeight="45.0" prefWidth="342.0">
+         <children>
+            <JFXButton fx:id="create_button" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" prefHeight="25.0" prefWidth="117.0" ripplerFill="WHITE" text="Create">
+               <effect>
+                  <Shadow />
+               </effect>
+            </JFXButton>
+            <Separator prefWidth="200.0" visible="false" />
+            <JFXButton fx:id="cancel_button" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" prefHeight="25.0" prefWidth="131.0" text="Cancel">
+               <effect>
+                  <Shadow />
+               </effect>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+</VBox>

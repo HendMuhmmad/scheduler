@@ -1,0 +1,279 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root
+{
+	-fx-background-color: #121212;
+	-fx-padding: 0 20 0 20;
+	 -fx-font-family: 'sans-serif';
+	
+}
+
+.tree-cell {
+	-fx-background-color: #1a1a1a;
+	-fx-text-fill: #cccccc ;
+	-fx-padding: 10;
+	/*-fx-background-radius: 80;*/
+	 -fx-scale-shape: true  ;
+	 -fx-font-size: 15;
+	  
+}
+
+.tree-cell .tree-disclosure-node .arrow {
+    
+     -fx-background-color: white;
+
+}
+#parent {
+	-fx-background-color:    #1a1a1a;
+    -fx-border-color: transparent transparent  #01b2b2 transparent;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-insets: 15;
+    
+    }
+
+#child:hover
+{
+	-fx-background-color:#262626;
+}
+
+#create
+{
+	-fx-underline: true;
+}
+#create:hover
+{
+	 -fx-text-fill:#3333ff;
+}
+
+
+.tree-view
+{
+	-fx-background-color:#1a1a1a ;
+	-fx-pref-width: 250;
+	
+}
+
+
+
+#title{
+	-fx-padding: 10 ;
+	-fx-font-size: 30;
+	-fx-text-fill: #cccccc;
+}
+#bottom{
+	-fx-padding: 10 ;
+	-fx-text-fill: #cccccc;
+	
+}
+.tab-header-background{
+	-fx-background-color: transparent  ;
+    -fx-background-radius:30 ;
+
+}
+
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.tab-pane{
+	-fx-background-color: #1a1a1a;
+	-fx-background-insets: 0 20 0 20;
+	-fx-padding: 0 20 0 20;
+}	
+
+.tab:hover
+{
+	-fx-background-color:#262626;
+}
+
+
+
+.tab:selected
+{
+	-fx-border-style:  solid none ;
+	-fx-border-radius: 0;
+	-fx-border-color: transparent transparent #01b2b2 transparent;
+
+	-fx-border-width: 3.5;
+}
+.tab-close-button 
+{
+-fx-background-color: -fx-mark-color;
+-fx-shape: "M 0,0 H1 L 4,3 7,0 H8 V1 L 5,4 8,7 V8 H7 L 4,5 1,8 H0 V7 L 3,4 0,1 Z";
+-fx-scale-shape: false;
+-fx-effect: dropshadow(two-pass-box , rgba(255, 255, 255, 0.4), 1, 0.0 , 0, 1);
+
+}
+
+
+.tab-close-button:hover 
+{
+-fx-background-color: derive(-fx-mark-color, -30%);
+}
+.tab
+{
+	
+	-fx-background-color: transparent;
+	-fx-font-size: 15;
+	-fx-alignment: center ;
+	-fx-padding: 10;
+}
+ .tab .tab-label
+{
+	
+	-fx-text-fill: #cccccc;
+	-fx-size: 30;
+	
+}
+.tab-close-button 
+{
+	-fx-alignment: left ;
+-fx-padding: 10;
+}
+
+ .tab-pane .label
+{	
+	-fx-text-fill: #cccccc;
+	-fx-font-size: 15;
+	
+}
+
+
+.button
+{
+	-fx-text-fill: #cccccc;
+	-fx-font-size: 15;
+	-fx-background-color: #01b2b2;
+	-fx-background-radius: 30;
+	-fx-pref-width: 100;
+}
+.button:hover
+{
+	-fx-background-color:#019898;
+}
+.text-field
+{
+	-fx-text-fill: #cccccc;
+	-fx-font-size: 15;
+	-fx-padding: 10;
+	
+}
+
+
+.chart
+{
+	-fx-background-color: #1a1a1a;
+	-fx-background-insets:0 20 20 20;
+	-fx-background-radius: 30;
+	-fx-padding: 30;
+	-fx-border-style: solid none;
+	-fx-border-color: #01b2b2;
+	-fx-border-radius: 0;
+	-fx-border-width: 3
+
+	
+}
+.chart-content
+{
+	-fx-background-color: #1a1a1a;
+	-fx-background-radius: 20;
+	
+}
+.chart-plot-background {
+    -fx-background-color: #1a1a1a ;
+}
+
+.chart-legend {
+   -fx-background-color:  transparent;
+ 
+}
+ 
+.chart-legend-item-symbol{
+   -fx-background-radius:5;
+}
+ .chart-title {
+  -fx-text-fill: #cccccc;
+}
+ 
+
+#flabel{
+	-fx-text-fill: #cccccc;
+	-fx-font-size: 25;
+
+	-fx-padding: 10;
+
+}
+.table-row-cell {
+    -fx-background-color: transparent ;
+    -fx-text-fill:#cccccc;
+     	/*-fx-background-radius: 80;*/
+     -fx-alignment: center ;
+}
+.table-cell {
+
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 15;
+    -fx-text-alignment: center ;
+    -fx-alignment: center ;
+    -fx-border-color: transparent ;
+    
+}
+
+
+.table-row-cell:odd:filled  {
+    -fx-background-color: #333333 ;
+    -fx-text-fill:#cccccc;
+ 
+}
+
+
+
+
+.table-view 
+{
+	-fx-background-color: #1a1a1a;
+		/*-fx-background-radius: 80;*/
+	-fx-pref-width: 500;
+	 
+}
+
+
+.table-view  .label
+{
+	-fx-text-fill:  #cccccc;
+	-fx-alignment: center ;
+	-fx-text-alignment: center;
+	-fx-font-size: 15;
+	
+}
+.table-view .column-header {
+	-fx-text-alignment: center;
+	-fx-alignment: center ;
+	-fx-padding: 10 10 10 10;
+}
+.table-view .column-header-background
+{
+	
+    /*-fx-background-radius: 80;*/
+    -fx-background-color: transparent;
+	-fx-background-insets: 10 10 10 10;
+	-fx-padding: 0 0 10 0 ;
+	-fx-border-color: transparent transparent  #01b2b2 transparent;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-insets: 15;
+    -fx-border-style: segments(100,25)  ;
+}
+.table-view .column-header , .table-view .filler
+{
+	-fx-size: 30;
+	-fx-border-width: 10 10 10 10;
+	-fx-background-color: transparent ;
+}
+
+
+/* When the table-row-cell is selected and focused 
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:focused:selected,
+.tree-table-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-table-row-cell:filled:focused:selected {
+    -fx-background-color: white;
+ 
+}*/

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TreeItem?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+
+
+   <center>
+      <TabPane fx:id="tabpane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+         <tabs>
+
+         </tabs></TabPane>
+   </center>
+   <right>
+      <TableView fx:id="table" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="process_column" prefWidth="75.0" text="Process" />
+          <TableColumn fx:id="burst_time_column" prefWidth="75.0" text="Burst Time" />
+            <TableColumn fx:id="arrival_time_column" prefWidth="75.0" text="Arrival Time" />
+            <TableColumn fx:id="waiting_time_column" prefWidth="75.0" text="Waiting Time" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </right>
+      <top>
+      <Label fx:id="title" text="CPU Schedular" textAlignment="CENTER" textFill="#f2f2f2" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <Label fx:id="bottom" alignment="BOTTOM_LEFT" text=" © 2020 Faculty of Engineering Ain shams University" textAlignment="CENTER" textFill="#f2f2f2" BorderPane.alignment="BOTTOM_LEFT" />
+   </bottom>
+   <left>
+      <JFXTreeView fx:id="tree" onMouseClicked="#treeMouseClick" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
